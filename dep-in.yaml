@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  createionTimestamp: null
+  labels:
+    app: dep-of-in-app-1
+  name: dep-of-in-app-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      finder: in-app-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        finder: in-app-1
+    spec:
+      containers:
+        - image: tasdidur/client-go-in-app-1
+          name: container-in-app-1

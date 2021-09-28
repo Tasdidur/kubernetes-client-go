@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hi-dp
+spec:
+  selector:
+    matchLabels:
+      finder: hi
+  replicas: 2
+  template:
+    metadata:
+      name: hi-pd
+      labels:
+        finder: hi
+    spec:
+      containers:
+        - name: hi-container
+          image: tasdidur/mini-server-2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hel-dp
+spec:
+  selector:
+    matchLabels:
+      finder: hel
+  replicas: 2
+  template:
+    metadata:
+      name: hel-pd
+      labels:
+        finder: hel
+    spec:
+      containers:
+        - name: hel-container
+          image: tasdidur/test-ingress

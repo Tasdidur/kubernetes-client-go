@@ -1,0 +1,36 @@
+kubectl get pods
+lc get pod
+lc get pods
+kubectl get pods dep-of-in-app-1-6fc7586f86-96hwq --watch
+kubectl get pds
+kubectl delete deployments dep-of-in-app-1
+kubectl apply -f dep-in.yaml
+kubectl get role
+kubectl get deployments
+kubectl logs dep-of-in-app-1-6fc7586f86-7ddgc -f
+kubectl apply -f allowRoleBinding.yaml
+kubectl apply -f allowRole.yaml
+kubectl get pods dep-of-in-app-1-6fc7586f86-7ddgc --watch
+docker push tasdidur/client-go-in-app-1
+docker images
+docker tag 53cb72c4d744 tasdidur/client-go-in-app-1
+docker 53cb72c4d744 -t tasdidur/client-go-in-app-1
+docker images ps
+docker container ls
+docker containers ls
+docker containers
+docker run 53cb72c4d744
+docker build .
+go build -o in-app-1 in-app-1.go
+go help build
+go build --help
+go build in-app-1.go -o in-app-1.go
+go build in-app-1 -o in-app-1.go
+go build in-app-1.go -o in-app-1
+kubectl delete deployments dep-of-out-app-1
+kubectl get dep
+kubectl logs dep-of-out-app-1-6f4784f69-6s2vl -f
+logs dep-of-out-app-1-6f4784f69-6s2vl -f
+kubectl get pods dep-of-out-app-1-6f4784f69-6s2vl --watch
+kubectl get pod
+kcget pods
